@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom properties */
+
+:root {
+  --ff-sans: 'Manrope', sans-serif;
+
+  --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --clr-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --clr-grayish-blue: hsl(212, 23%, 69%);
+  --clr-light-grayish-blue: hsl(210, 46%, 95%);
+  --clr-white: #ffffff;
+
+  --fw-reg: 500;
+  --fw-bold: 700;
+
+  --fs-body: 0.813rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: var(--ff-sans);
+  color: var(--clr-very-dark-grayish-blue);
+  font-size: var(--fs-body);
+  /*
+  font-size: var(--fs-body);
+  color: var(--clr-very-dark-magenta-text);
+  text-align: center; 
+  */
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Typography */
+
+/* Utility styles */
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+
+  max-width: 370px;
+}
+
+/* SECTIONS */
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
