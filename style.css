@@ -25,6 +25,7 @@
 
   --fs-title-desktop: 1.15rem;
   --fs-body-desktop: 0.765rem;
+  --fs-share-desktop: 0.7rem;
 }
 
 html {
@@ -133,6 +134,9 @@ img {
   border: none;
   padding: 0.75em;
 }
+.share-btn:hover {
+  opacity: 0.6;
+}
 
 /* Share area */
 .share-area {
@@ -166,6 +170,10 @@ img {
   font-size: 1.25rem;
 }
 
+.fab:hover {
+  opacity: 0.5;
+}
+
 .share-btn-dark {
   background-color: var(--clr-grayish-blue);
 }
@@ -184,10 +192,6 @@ img {
 }
 
 /* class helpers */
-
-.hidden {
-  display: none;
-}
 
 .visible {
   display: flex;
@@ -266,5 +270,33 @@ img {
   .share-icon {
     margin-left: auto;
     margin-right: -0.5em;
+  }
+
+  .share-area {
+    width: 225px;
+    bottom: 85px;
+    left: 500px;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 3px 5px rgba(226, 233, 235, 0.5);
+  }
+
+  .share-socials {
+    margin-left: 0.4em;
+  }
+
+  .social-icon {
+    padding: 0 0.5em;
+  }
+
+  .share-text {
+    font-size: var(--fs-share-desktop);
+    letter-spacing: 0.4em;
+    line-height: 2;
+  }
+
+  .share-btn-dark {
+    display: none;
   }
 }

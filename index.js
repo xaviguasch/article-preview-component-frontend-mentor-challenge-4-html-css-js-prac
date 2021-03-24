@@ -4,7 +4,9 @@ const shareArea = document.querySelector('.share-area')
 
 shareBtns.forEach((shareBtn) => {
   shareBtn.addEventListener('click', () => {
-    authorArea.classList.toggle('hidden')
+    // authorArea.classList.toggle('hidden')
     shareArea.classList.toggle('visible')
   })
 })
+
+console.log(window.innerWidth)
