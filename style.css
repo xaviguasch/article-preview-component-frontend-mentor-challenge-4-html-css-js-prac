@@ -77,6 +77,7 @@ img {
 /* SECTIONS */
 
 .card {
+  position: relative;
   background-color: var(--clr-white);
   max-width: 365px;
   margin: 3em auto;
@@ -97,6 +98,7 @@ img {
 
 .copy-area {
   padding: 2em 2.3em 1.5em;
+  height: 328px;
 }
 
 .content {
@@ -132,6 +134,42 @@ img {
   padding: 0.75em;
 }
 
+/* Share area */
+.share-area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-very-dark-grayish-blue);
+  border-radius: 0 0 1em 1em;
+  padding: 1em 2.25em;
+  display: none;
+}
+.share-socials {
+  display: flex;
+  width: 60%;
+  color: var(--clr-white);
+  justify-content: space-between;
+  margin-top: 0.3em;
+}
+
+.share-text {
+  color: var(--clr-grayish-blue);
+  letter-spacing: 0.2em;
+  margin-right: 1em;
+}
+
+.fab {
+  font-size: 1.25rem;
+}
+
+.share-btn-dark {
+  background-color: var(--clr-grayish-blue);
+}
+
 /* Footer */
 
 .footer {
@@ -143,6 +181,16 @@ img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* class helpers */
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
 }
 
 /* MEDIA QUERIES */
