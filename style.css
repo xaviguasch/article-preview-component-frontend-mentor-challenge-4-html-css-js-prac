@@ -299,4 +299,9 @@ img {
   .share-btn-dark {
     display: none;
   }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
