@@ -68,7 +68,7 @@ img {
   margin: 0 auto;
   padding: 0 1.75em;
   max-width: 374px;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
